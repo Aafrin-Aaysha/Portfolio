@@ -3,44 +3,53 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Github, ExternalLink, Utensils, Cloud, Activity, Smartphone, Shield } from "lucide-react";
+import { Shield, BookOpen, Cloud, Utensils, Globe, Github, ExternalLink } from "lucide-react";
 
 const projectsData = [
   {
-    title: "Agentic AI Honeypot System",
-    description: "An advanced cybersecurity deception platform utilizing autonomous AI agents. It dynamically generates realistic digital decoys, analyzes attacker behavior, and adapts defense strategies in real-time.",
-    tech: ["Python", "AI Agents", "Docker", "Machine Learning"],
+    title: "Agentic Honeypot – AI-based Scam Detection System",
+    description: "Designed and developed an automated honeypot system to simulate vulnerable services and capture malicious activity. Implemented backend monitoring, logging, and automated interaction modules.",
+    tech: ["Python", "REST APIs", "Automation", "Logging"],
     github: "https://github.com/Aafrin-Aaysha/agentic-honeypot",
     demo: "",
     gradient: "from-primary to-accent",
     icon: Shield
   },
   {
+    title: "Research Paper Analyzer – RAG-based AI Application",
+    description: "Built a Retrieval-Augmented Generation (RAG) system to analyze and summarize research papers. Implemented document processing, embedding, and question-answering pipeline.",
+    tech: ["Python", "LLM", "RAG", "Web Application"],
+    github: "",
+    demo: "",
+    gradient: "from-secondary to-primary",
+    icon: BookOpen
+  },
+  {
     title: "Load Balancer for College Result Website",
-    description: "A robust system-level load balancing architecture designed to efficiently distribute high-volume incoming traffic across multiple servers, ensuring high availability and zero downtime during peak result processing.",
-    tech: ["Python", "React", "System Design"],
+    description: "Developed a load balancing system to distribute incoming requests across multiple servers. Improved system availability and reduced server overload during peak traffic.",
+    tech: ["Python", "React", "Distributed Systems"],
     github: "https://github.com/Aafrin-Aaysha/load-balancer",
     demo: "https://college-result-portal.netlify.app/",
-    gradient: "from-secondary to-accent",
+    gradient: "from-accent to-secondary",
     icon: Cloud
   },
   {
-    title: "Groundwater Stage Prediction Dashboard",
-    description: "A comprehensive machine learning-based analytical dashboard trained on diverse environmental datasets. It accurately predicts groundwater levels and provides actionable insights for sustainable water resource planning.",
-    tech: ["Python", "Machine Learning", "Streamlit", "Data Analysis"],
-    github: "https://github.com/Aafrin-Aaysha/groundwater-dashboard",
-    demo: "https://groundwater-dashboard-model.streamlit.app/",
-    gradient: "from-accent to-primary",
-    icon: Activity
-  },
-  {
-    title: "Restaurant Platform Integration",
-    description: "A full-featured MERN-stack restaurant management platform featuring an interactive dynamic menu display, secure user authentication, and a streamlined end-to-end food ordering workflow.",
-    tech: ["React", "Node.js", "MongoDB", "Tailwind CSS"],
+    title: "Restaurant Website – Full Stack Application",
+    description: "Built a full-stack food ordering application with authentication, cart, and admin dashboard. Developed REST APIs and integrated MongoDB database.",
+    tech: ["React.js", "Node.js", "Express.js", "MongoDB"],
     github: "",
     demo: "",
     gradient: "from-primary to-secondary",
     icon: Utensils
+  },
+  {
+    title: "Zubizo – Invitation Stationery Business Website",
+    description: "Designed and developed a responsive production-level business website. Implemented backend integration and modern UI design.",
+    tech: ["React.js", "Node.js", "MongoDB"],
+    github: "",
+    demo: "",
+    gradient: "from-secondary to-accent",
+    icon: Globe
   }
 ];
 

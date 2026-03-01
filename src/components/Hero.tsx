@@ -10,9 +10,9 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
-      <div 
+      <div
         className="absolute inset-0 z-0"
         style={{
           backgroundImage: `url(${heroBg})`,
@@ -35,58 +35,77 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 py-20 text-center">
+      <div className="relative z-10 container mx-auto px-4 py-20 text-center mt-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <motion.h1 
+          <motion.h1
             className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 gradient-text"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.2 }}
           >
-            Aafrin Aaysha
+            Aafrin Aaysha A
           </motion.h1>
-          
-          <motion.p 
-            className="text-xl md:text-2xl lg:text-3xl mb-4 text-muted-foreground"
+
+          <motion.p
+            className="text-xl md:text-2xl lg:text-3xl mb-4 font-semibold text-foreground/90"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.4 }}
           >
-            Full Stack Web Development • Android Development • AI Tools
+            AI/ML Engineer | Software Engineer | Full-Stack Developer | UI/UX Developer
           </motion.p>
 
-          <motion.p 
-            className="text-lg md:text-xl mb-12 text-muted-foreground max-w-2xl mx-auto"
+          <motion.p
+            className="text-lg md:text-xl mb-2 text-muted-foreground max-w-3xl mx-auto"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 0.5 }}
+          >
+            Building intelligent AI systems, scalable full-stack applications, and user-centered digital experiences.
+          </motion.p>
+
+          <motion.p
+            className="text-base md:text-lg mb-12 text-muted-foreground max-w-3xl mx-auto"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.6 }}
           >
-            MCA student & part-time designer on a journey toward full stack and AI excellence
+            Specializing in Machine Learning, NLP, React, Python, and modern web technologies to develop real-world intelligent and scalable solutions.
           </motion.p>
 
-          <motion.div 
+          <motion.div
             className="flex flex-wrap gap-4 justify-center"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.8 }}
           >
-            <Button 
-              variant="neon" 
+            <Button
+              variant="neon"
               size="lg"
               onClick={() => scrollToSection("projects")}
             >
               View Projects
             </Button>
-            <Button 
-              variant="gradient" 
+            <Button
+              variant="outline"
+              size="lg"
+              className="border-primary text-primary hover:bg-primary/10"
+              asChild
+            >
+              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+                Download Resume
+              </a>
+            </Button>
+            <Button
+              variant="gradient"
               size="lg"
               onClick={() => scrollToSection("contact")}
             >
-              Get In Touch
+              Contact Me
             </Button>
           </motion.div>
         </motion.div>

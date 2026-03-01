@@ -4,11 +4,13 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 
 const navItems = [
+  { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
-  { label: "Education", href: "#education" },
-  { label: "Courses", href: "#courses" },
+  { label: "Skills", href: "#skills" },
   { label: "Projects", href: "#projects" },
-  { label: "Internships", href: "#internships" },
+  { label: "Experience", href: "#internships" },
+  { label: "Education", href: "#education" },
+  { label: "Certifications", href: "#courses" },
   { label: "Achievements", href: "#achievements" },
   { label: "Contact", href: "#contact" }
 ];
@@ -36,13 +38,12 @@ const Navigation = () => {
       <motion.nav
         initial={{ y: -100 }}
         animate={{ y: 0 }}
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          isScrolled ? "glass-card shadow-lg" : "bg-transparent"
-        }`}
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "glass-card shadow-lg" : "bg-transparent"
+          }`}
       >
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
-            <motion.div 
+            <motion.div
               className="text-2xl font-bold gradient-text cursor-pointer"
               whileHover={{ scale: 1.05 }}
               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}

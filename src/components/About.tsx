@@ -32,14 +32,14 @@ const About = () => {
           animate={isInView ? "visible" : "hidden"}
           className="max-w-6xl mx-auto"
         >
-          <motion.h2 
+          <motion.h2
             variants={itemVariants}
             className="text-4xl md:text-5xl font-bold text-center mb-4 gradient-text"
           >
             About Me
           </motion.h2>
-          
-          <motion.div 
+
+          <motion.div
             variants={itemVariants}
             className="w-20 h-1 bg-gradient-to-r from-primary via-secondary to-accent mx-auto mb-16"
           />
@@ -48,39 +48,42 @@ const About = () => {
             <motion.div variants={itemVariants} className="flex justify-center">
               <div className="relative ">
                 <div className="absolute inset-0 bg-gradient-to-r from-primary to-secondary rounded-full blur-2xl opacity-50 animate-pulse"></div>
-                <img 
-                  src={avatarImg} 
-                  alt="Profile" 
+                <img
+                  src={avatarImg}
+                  alt="Profile"
                   className="relative w-64 h-64 md:w-80 md:h-80 rounded-full object-cover border-4 border-primary glow-primary"
                 />
               </div>
             </motion.div>
 
             <motion.div variants={itemVariants} className="space-y-6">
-              <p className="text-lg text-foreground/90 leading-relaxed">
-                I'm a passionate developer with a love for creating innovative solutions 
-                that make a difference. With expertise in modern web technologies and a 
-                keen eye for design, I bring ideas to life through code.
-              </p>
-              
-              <p className="text-lg text-foreground/90 leading-relaxed">
-                My journey in tech has been driven by curiosity and a constant desire to 
-                learn. I specialize in full-stack development, with a focus on creating 
-                seamless user experiences and robust backend systems.
-              </p>
+              <div className="space-y-4">
+                <p className="text-lg text-foreground/90 leading-relaxed">
+                  I am an aspiring AI/ML Engineer and Software Developer with hands-on experience in building intelligent systems, full-stack web applications, and data-driven dashboards.
+                </p>
 
-              <div className="grid grid-cols-3 gap-4 pt-4">
-                <div className="glass-card p-4 rounded-lg text-center hover:scale-105 transition-transform">
-                  <Code2 className="w-8 h-8 mx-auto mb-2 text-primary" />
-                  <p className="text-sm font-semibold">Clean Code</p>
-                </div>
-                <div className="glass-card p-4 rounded-lg text-center hover:scale-105 transition-transform">
-                  <Sparkles className="w-8 h-8 mx-auto mb-2 text-secondary" />
-                  <p className="text-sm font-semibold">Innovation</p>
-                </div>
-                <div className="glass-card p-4 rounded-lg text-center hover:scale-105 transition-transform">
-                  <Rocket className="w-8 h-8 mx-auto mb-2 text-accent" />
-                  <p className="text-sm font-semibold">Fast Delivery</p>
+                <p className="text-lg text-foreground/90 leading-relaxed">
+                  My work focuses on Machine Learning, Natural Language Processing, and scalable web development using Python, React, and modern frameworks.
+                </p>
+
+                <p className="text-lg text-foreground/90 leading-relaxed">
+                  I have developed AI-based systems including a Code-Mixed Language Identification model and an Agentic AI Honeypot for cybersecurity.
+                </p>
+
+                <p className="text-lg text-foreground/90 leading-relaxed">
+                  I am passionate about solving real-world problems using AI, designing intuitive user interfaces, and building efficient full-stack applications.
+                </p>
+              </div>
+
+              <div className="pt-6">
+                <p className="text-lg font-semibold text-primary mb-3">Currently seeking opportunities in:</p>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  {["AI / Machine Learning Engineering", "Software Engineering", "Full-Stack Development", "UI/UX Engineering"].map((role, i) => (
+                    <div key={i} className="flex items-center gap-2 text-foreground/80">
+                      <Sparkles className="w-4 h-4 text-accent" />
+                      <span>{role}</span>
+                    </div>
+                  ))}
                 </div>
               </div>
             </motion.div>

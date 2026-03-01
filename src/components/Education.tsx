@@ -4,17 +4,17 @@ import { GraduationCap, Calendar, Award } from "lucide-react";
 
 const educationData = [
   {
-    degree: "MCA (Master of Computer Applications)",
-    institution: "Bishop Heber College, Trichy",
+    degree: "Master of Computer Application",
+    institution: "Bishop Heber College (2024 – 2026)",
     duration: "2024 - 2026",
-    cgpa: "8.4/10",
+    cgpa: "8.5",
     status: "Currently Pursuing"
   },
   {
-    degree: "B.Sc Computer Science",
-    institution: "Jamal Mohamed College, Trichy",
+    degree: "B.Sc. Computer Science",
+    institution: "Jamal Mohamed College, Trichy (2021 – 2024)",
     duration: "2021 - 2024",
-    cgpa: "8.8/10",
+    cgpa: "8.8",
     status: "Completed"
   }
 ];
@@ -27,11 +27,11 @@ const Education = () => {
     <section id="education" className="py-20 px-4 relative">
       <div className="max-w-6xl mx-auto" ref={ref}>
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 gradient-text">
-            Education
-          </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-primary via-secondary to-accent mx-auto mb-16" />
+          Education
+        </h2>
+        <div className="w-20 h-1 bg-gradient-to-r from-primary via-secondary to-accent mx-auto mb-16" />
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto"></div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto"></div>
 
         <div className="space-y-6">
           {educationData.map((edu, index) => (
@@ -57,7 +57,7 @@ const Education = () => {
                       </p>
                     </div>
                   </div>
-                  
+
                   <div className="flex flex-wrap gap-4 ml-[52px]">
                     <div className="flex items-center gap-2 text-sm">
                       <Calendar className="w-4 h-4 text-secondary" />
@@ -69,7 +69,7 @@ const Education = () => {
                     </div>
                   </div>
                 </div>
-                
+
                 {edu.status === "Currently Pursuing" && (
                   <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-primary/10 text-primary neon-border animate-pulse">
                     {edu.status}

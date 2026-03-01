@@ -2,34 +2,37 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Briefcase, Calendar, MapPin, ExternalLink } from "lucide-react";
+import techzar from "../assets/certificates/techzarinfo.jpg";
+import ilife from "../assets/certificates/ilife.jpg";
 
 const internshipsData = [
   {
-    company: "TechZarInfo Software Solutions Pvt Ltd",
-    role: "Full Stack Developer Intern",
-    duration: "Apr 2025 - May 2025",
+    company: "TechZarInfo, Trichy",
+    role: "Full Stack Development Intern",
+    duration: "May 2025",
     location: "Trichy, Tamil Nadu",
-    description: "Developed a full-stack Restaurant Website using the MERN stack with features like menu management, user authentication, and order handling.",
+    description: "Developed full-stack web applications using React, Node.js, and MongoDB; supported REST API development, testing, and performance optimization.",
     highlights: [
-      "Implemented responsive UI using React and Tailwind CSS",
-      "Designed REST APIs with Node.js and Express",
-      "Integrated MongoDB for storing user and menu data",
-      "Deployed the application and demonstrated a working prototype"
+      "Built scalable backend services using Node.js and Express",
+      "Managed database schemas and queries with MongoDB",
+      "Optimized frontend performance and responsiveness",
+      "Collaborated on API design and documentation"
     ],
-    certificate: "/certificates/techzarinfo.jpg",
+    certificate: techzar,
   },
   {
-    company: "ILife Technologies",
-    role: "Full Stack Developer Intern",
-    duration: "Feb 2023 - Mar 2023",
+    company: "ILife Technologies, Trichy",
+    role: "Full Stack Development Intern",
+    duration: "February 2023",
     location: "Trichy, Tamil Nadu",
-    description: "Specialized in creating responsive and accessible user interfaces.",
+    description: "Designed responsive UI components using HTML, CSS, JavaScript, and React; collaborated with UI/UX teams and received Best Intern recognition.",
     highlights: [
-      "Redesigned company website increasing conversion by 25%",
-      "Implemented component library used across 5 products",
-      "Achieved 100% accessibility compliance"
+      "Developed interactive UI elements with modern React patterns",
+      "Ensured cross-browser compatibility and accessibility",
+      "Participated in daily stand-ups and sprint planning",
+      "Awarded 'Best Intern' for exceptional design contributions"
     ],
-    certificate: ""
+    certificate: ilife
   }
 ];
 

@@ -7,62 +7,55 @@ import { ExternalLink, Award } from "lucide-react";
 import android from "../assets/certificates/android.jpg";
 import fsd from "../assets/certificates/fsd.jpg";
 import python from "../assets/certificates/python.jpg";
-import dbms from "../assets/certificates/dbms.jpg"
+import dbms from "../assets/certificates/dbms.jpg";
+import genAi from "../assets/certificates/generative-ai-sawit.png";
+import powerBi from "../assets/certificates/powerbi-guvi-hcl.png";
 
 const coursesData = [
   {
-    title: "Generative AI Learnathon (SAWiT.AI)",
-    provider: "HCL Guvi, HCLTech, Google Women Techmakers, NASSCOM, AICTE",
-    date: "February 1, 2026",
+    title: "SAWIT.AI Learnathon - Generative AI Fundamentals",
+    provider: "HCL GUVI, NASSCOM, AICTE",
+    date: "Feb 2026",
     description: "Hands-on participation in building Generative AI models and learning about cutting-edge AI technologies.",
     badge: "Certified",
-    link: "/certificates/generative-ai-sawit.png",
-    image: "/certificates/generative-ai-sawit.png"
+    link: genAi,
+    image: genAi
   },
   {
     title: "Build Dashboards in Power BI with Python Data",
-    provider: "HCL Guvi",
-    date: "January 31, 2026",
+    provider: "HCL GUVI",
+    date: "Jan 2026",
     description: "Learned how to transform, analyze, and visualize Python data using Microsoft Power BI dashboards.",
     badge: "Certified",
-    link: "/certificates/powerbi-guvi-hcl.png",
-    image: "/certificates/powerbi-guvi-hcl.png"
+    link: powerBi,
+    image: powerBi
   },
   {
-    title: "The Complete Python Pro Bootcamp",
+    title: "Python Pro Bootcamp Certification",
     provider: "Udemy",
-    date: "2025",
+    date: "Oct, 2025",
     description: "Hands-on Python training covering OOP, scripting, and automation.",
     badge: "Certified",
     link: python,
     image: python
   },
   {
-    title: "Full Stack Web Development",
+    title: "Full Stack Development Certification",
     provider: "Udemy",
-    date: "2025",
+    date: "May 2025",
     description: "Comprehensive course covering MERN stack, REST APIs, and database design.",
     badge: "Certified",
     link: fsd,
     image: fsd
   },
   {
-    title: "Data Base Management System",
+    title: "Database Management Systems",
     provider: "NPTEL",
     date: "2025",
     description: "Learned database design, normalization, and SQL fundamentals.",
     badge: "Certified",
     link: dbms,
     image: dbms
-  },
-  {
-    title: "Android App Development",
-    provider: "Intershala",
-    date: "2023",
-    description: "Learned end-to-end Android application development using Java & Kotlin, Android Studio, API integration, and local data storage.",
-    badge: "Certified",
-    link: android,
-    image: android
   }
 ];
 
@@ -92,10 +85,20 @@ const Courses = () => {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 className="flex"
               >
-                <Card className="glass-card flex flex-col h-full hover:scale-105 transition-all duration-300 group cursor-pointer border-2 border-transparent hover:border-primary hover:glow-primary">
-                  <CardHeader>
+                <Card className="glass-card flex flex-col h-full hover:scale-105 transition-all duration-300 group cursor-pointer border-2 border-transparent hover:border-primary hover:glow-primary overflow-hidden">
+                  <div className="relative w-full h-48 overflow-hidden bg-black/40 border-b border-border p-2">
+                    <img
+                      src={course.image}
+                      alt={course.title}
+                      className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                      <Award className="w-12 h-12 text-primary" />
+                    </div>
+                  </div>
+
+                  <CardHeader className="flex-none">
                     <div className="flex justify-between items-start mb-2">
-                      <Award className="w-8 h-8 text-primary group-hover:text-secondary transition-colors" />
                       <Badge variant="secondary" className="bg-secondary/20 text-secondary border border-secondary/50">
                         {course.badge}
                       </Badge>
