@@ -26,7 +26,7 @@ const skillsData = [
     {
         category: "Databases",
         icon: Database,
-        skills: ["MongoDB", "MySQL", "SQL", "Database Design", "Performance"],
+        skills: ["MongoDB", "MySQL", "SQL", "Database Design", "Query Optimization"],
         color: "text-primary"
     },
     {
@@ -42,9 +42,9 @@ const skillsData = [
         color: "text-secondary"
     },
     {
-        category: "Tools & Practices",
-        icon: Wrench,
-        skills: ["Git", "Postman", "Power BI", "Tableau", "Figma", "Agile"],
+        category: "UI/UX Design",
+        icon: Layout,
+        skills: ["Figma", "Wireframing", "Prototyping", "Responsive Design", "UI Design"],
         color: "text-primary"
     }
 ];
