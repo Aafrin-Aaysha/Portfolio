@@ -3,7 +3,7 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Shield, BookOpen, Cloud, Utensils, Globe, Github, ExternalLink } from "lucide-react";
+import { Shield, BookOpen, Cloud, Utensils, Globe, Github, ExternalLink, Layout } from "lucide-react";
 
 const projectsData = [
   {
