@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import avatarImg from "@/assets/avatar.jpg";
+import avatarImg from "@/assets/profile.png";
 import { Code2, Sparkles, Rocket } from "lucide-react";
 
 const About = () => {
@@ -46,7 +46,7 @@ const About = () => {
 
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <motion.div variants={itemVariants} className="flex justify-center">
-              <div className="relative">
+              <div className="relative ">
                 <div className="absolute inset-0 bg-gradient-to-r from-primary to-secondary rounded-full blur-2xl opacity-50 animate-pulse"></div>
                 <img 
                   src={avatarImg} 

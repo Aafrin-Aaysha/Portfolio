@@ -47,7 +47,7 @@ const Hero = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.2 }}
           >
-            Your Name
+            Aafrin Aaysha
           </motion.h1>
           
           <motion.p 
@@ -56,7 +56,7 @@ const Hero = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.4 }}
           >
-            Full Stack Developer & Tech Enthusiast
+            Full Stack Web Development • Android Development • AI Tools
           </motion.p>
 
           <motion.p 
@@ -65,7 +65,7 @@ const Hero = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.6 }}
           >
-            Building the future with code, one project at a time
+            MCA student & part-time designer on a journey toward full stack and AI excellence
           </motion.p>
 
           <motion.div 

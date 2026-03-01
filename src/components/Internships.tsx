@@ -1,44 +1,35 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { Briefcase, Calendar, MapPin } from "lucide-react";
+import { Briefcase, Calendar, MapPin, ExternalLink } from "lucide-react";
 
 const internshipsData = [
   {
-    company: "Tech Innovators Inc.",
+    company: "TechZarInfo Software Solutions Pvt Ltd",
     role: "Full Stack Developer Intern",
-    duration: "Jan 2024 - Jun 2024",
-    location: "San Francisco, CA",
-    description: "Developed and maintained web applications using React and Node.js. Collaborated with cross-functional teams to deliver high-quality features.",
+    duration: "Apr 2025 - May 2025",
+    location: "Trichy, Tamil Nadu",
+    description: "Developed a full-stack Restaurant Website using the MERN stack with features like menu management, user authentication, and order handling.",
     highlights: [
-      "Built 3 major features improving user engagement by 40%",
-      "Optimized API performance reducing response time by 60%",
-      "Mentored 2 junior developers"
-    ]
+      "Implemented responsive UI using React and Tailwind CSS",
+      "Designed REST APIs with Node.js and Express",
+      "Integrated MongoDB for storing user and menu data",
+      "Deployed the application and demonstrated a working prototype"
+    ],
+    certificate: "/certificates/techzarinfo.jpg",
   },
   {
-    company: "Digital Solutions Ltd.",
-    role: "Frontend Developer Intern",
-    duration: "Jun 2023 - Dec 2023",
-    location: "Remote",
-    description: "Specialized in creating responsive and accessible user interfaces. Worked closely with designers to implement pixel-perfect designs.",
+    company: "ILife Technologies",
+    role: "Full Stack Developer Intern",
+    duration: "Feb 2023 - Mar 2023",
+    location: "Trichy, Tamil Nadu",
+    description: "Specialized in creating responsive and accessible user interfaces.",
     highlights: [
       "Redesigned company website increasing conversion by 25%",
       "Implemented component library used across 5 products",
       "Achieved 100% accessibility compliance"
-    ]
-  },
-  {
-    company: "CloudTech Systems",
-    role: "Software Engineering Intern",
-    duration: "Jan 2023 - May 2023",
-    location: "Austin, TX",
-    description: "Contributed to cloud infrastructure and DevOps initiatives. Automated deployment processes and improved system reliability.",
-    highlights: [
-      "Reduced deployment time by 70% through automation",
-      "Implemented monitoring solutions for 20+ services",
-      "Documented CI/CD best practices"
-    ]
+    ],
+    certificate: ""
   }
 ];
 
@@ -107,6 +98,21 @@ const Internships = () => {
                       ))}
                     </ul>
                   </div>
+
+                  {internship.certificate && (
+                    <div className="mt-6 pt-4 border-t border-border">
+                      <a
+                        href={internship.certificate}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 text-primary hover:text-secondary transition-colors group/link"
+                      >
+                        View Certificate
+                        <ExternalLink className="w-4 h-4 ml-2 group-hover/link:translate-x-1 transition-transform" />
+                      </a>
+                    </div>
+                  )}
+
                 </div>
               </motion.div>
             ))}

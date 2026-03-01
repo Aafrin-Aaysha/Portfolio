@@ -4,39 +4,43 @@ import { useRef } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Award } from "lucide-react";
+import android from "../assets/certificates/android.jpg";
+import fsd from "../assets/certificates/fsd.jpg";
+import python from "../assets/certificates/python.jpg";
+import dbms from "../assets/certificates/dbms.jpg"
 
 const coursesData = [
   {
-    title: "Advanced React & TypeScript",
+    title: "The Complete Python Pro Bootcamp",
     provider: "Udemy",
-    date: "2024",
-    description: "Mastered modern React patterns, hooks, and TypeScript integration for enterprise applications.",
-    badge: "Certificate",
-    link: "#"
+    date: "2025",
+    description: "Hands-on Python training covering OOP, scripting, and automation.",
+    badge: "Certificated",
+    link: python
   },
   {
     title: "Full Stack Web Development",
-    provider: "Coursera",
-    date: "2023",
+    provider: "Udemy",
+    date: "2025",
     description: "Comprehensive course covering MERN stack, REST APIs, and database design.",
-    badge: "Verified",
-    link: "#"
+    badge: "Certificated",
+    link: fsd
   },
   {
-    title: "Cloud Architecture & DevOps",
-    provider: "AWS",
+    title: "Data Base Management System",
+    provider: "NPTEL",
+    date: "2025",
+    description: "Learned database design, normalization, and SQL fundamentals.",
+    badge: "Certificated",
+    link: dbms
+  },
+  {
+    title: "Android App Development",
+    provider: "Intershala",
     date: "2023",
-    description: "Cloud computing fundamentals, CI/CD pipelines, and containerization with Docker.",
-    badge: "Certified",
-    link: "#"
-  },
-  {
-    title: "UI/UX Design Fundamentals",
-    provider: "Google",
-    date: "2022",
-    description: "User-centered design principles, prototyping, and modern design tools.",
-    badge: "Certificate",
-    link: "#"
+    description: "Learned end-to-end Android application development using Java & Kotlin, Android Studio, API integration, and local data storage.",
+    badge: "Certificated",
+    link: android
   }
 ];
 

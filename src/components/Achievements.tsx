@@ -1,37 +1,23 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { Trophy, Star, Award, Zap } from "lucide-react";
+import { Trophy, Star, Award, Zap,Crown } from "lucide-react";
 
 const achievementsData = [
   {
-    title: "Best Innovation Award",
-    description: "Recognized for developing an AI-powered solution that improved team productivity by 50%",
+    title: "Best Intern Award",
+    description: "Best Intern Award in ILife Technologies",
     icon: Trophy,
-    year: "2024",
+    year: "2023",
     color: "text-accent"
   },
   {
-    title: "Hackathon Winner",
-    description: "First place at TechCrunch Disrupt 2023 for building a revolutionary fintech app",
-    icon: Star,
-    year: "2023",
+    title: "Ms. Web Fest 2k25",
+    description: "Queen of Web Fest in Holycross Inter Collegiate Competition",
+    icon: Crown,
+    year: "2025",
     color: "text-primary"
   },
-  {
-    title: "Open Source Contributor",
-    description: "Made significant contributions to major open-source projects with 500+ stars on GitHub",
-    icon: Award,
-    year: "2023",
-    color: "text-secondary"
-  },
-  {
-    title: "Top Performer",
-    description: "Achieved highest performance rating for exceptional code quality and team collaboration",
-    icon: Zap,
-    year: "2024",
-    color: "text-accent"
-  }
 ];
 
 const Achievements = () => {
@@ -51,7 +37,8 @@ const Achievements = () => {
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-primary via-secondary to-accent mx-auto mb-16" />
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 max-w-3xl mx-auto justify-items-center">
+
             {achievementsData.map((achievement, index) => {
               const Icon = achievement.icon;
               return (

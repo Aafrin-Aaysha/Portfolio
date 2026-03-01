@@ -2,13 +2,12 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Mail, Twitter } from "lucide-react";
+import { Github, Linkedin, Mail, Download } from "lucide-react";
 
 const socialLinks = [
-  { icon: Github, label: "GitHub", href: "https://github.com", color: "hover:text-primary" },
-  { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com", color: "hover:text-primary" },
-  { icon: Twitter, label: "Twitter", href: "https://twitter.com", color: "hover:text-primary" },
-  { icon: Mail, label: "Email", href: "mailto:your.email@example.com", color: "hover:text-primary" }
+  { icon: Github, label: "GitHub", href: "https://github.com/Aafrin-Aaysha?tab=repositories", color: "hover:text-primary" },
+  { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/aafrinaaysha/", color: "hover:text-primary" },
+  { icon: Mail, label: "Email", href: "https://mail.google.com/mail/?view=cm&to=aafrinaaysha@gmail.com", color: "hover:text-primary" }
 ];
 
 const Contact = () => {
@@ -29,7 +28,7 @@ const Contact = () => {
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-primary via-secondary to-accent mx-auto mb-8" />
 
-          <motion.p 
+          <motion.p
             className="text-xl text-muted-foreground mb-12"
             initial={{ opacity: 0 }}
             animate={isInView ? { opacity: 1 } : { opacity: 0 }}
@@ -39,7 +38,7 @@ const Contact = () => {
             Let's create something amazing together!
           </motion.p>
 
-          <motion.div 
+          <motion.div
             className="flex flex-wrap justify-center gap-6 mb-12"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
@@ -72,28 +71,38 @@ const Contact = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.6, delay: 0.6 }}
+            className="flex flex-wrap justify-center gap-4"
           >
-            <Button 
-              variant="gradient" 
+            <Button
+              variant="gradient"
               size="lg"
               asChild
             >
-              <a href="mailto:your.email@example.com">
-                <Mail className="w-5 h-5" />
+              <a href="https://mail.google.com/mail/?view=cm&to=aafrinaaysha@gmail.com" target="_blank" rel="noopener noreferrer">
+                <Mail className="w-5 h-5 mr-2" />
                 Get In Touch
+              </a>
+            </Button>
+            <Button
+              variant="outline"
+              size="lg"
+              className="border-primary text-primary hover:bg-primary/10"
+              asChild
+            >
+              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+                <Download className="w-5 h-5 mr-2" />
+                Download Resume
               </a>
             </Button>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             className="mt-16 pt-8 border-t border-border"
             initial={{ opacity: 0 }}
             animate={isInView ? { opacity: 1 } : { opacity: 0 }}
             transition={{ duration: 0.6, delay: 0.8 }}
           >
-            <p className="text-muted-foreground">
-              © 2024 Your Name. Built with React, TypeScript & Framer Motion
-            </p>
+            <p>Designed & Developed by <span className="text-primary font-semibold">Aafrin Aaysha</span> • 2025</p>
           </motion.div>
         </motion.div>
       </div>
