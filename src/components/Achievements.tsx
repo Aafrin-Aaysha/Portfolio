@@ -21,6 +21,15 @@ const achievementsData = [
     icon: Trophy,
     year: "2023",
     color: "text-secondary"
+  },
+  {
+    title: "Ms. Web Fest 2k26",
+    organization: "Holy Cross College",
+    description: "Crowned Queen of Web Fest 2k26, showcasing top-tier web development skills in a competitive inter-collegiate event.",
+    category: "Technical Competition",
+    icon: Crown,
+    year: "2026",
+    color: "text-primary"
   }
 ];
 
