@@ -25,7 +25,7 @@ const achievementsData = [
   {
     title: "Ms. Web Fest 2k26",
     organization: "Holy Cross College",
-    description: "Crowned Queen of Web Fest 2k26, showcasing top-tier web development skills in a competitive inter-collegiate event.",
+    description: "Awarded the prestigious Ms. Web Fest 2k26 title for winning IT Quiz and IT Dumb Charades, demonstrating strong technical knowledge, logical reasoning, and competitive problem-solving skills in an inter-collegiate technical symposium.",
     category: "Technical Competition",
     icon: Crown,
     year: "2026",

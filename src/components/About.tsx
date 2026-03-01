@@ -58,20 +58,16 @@ const About = () => {
 
             <motion.div variants={itemVariants} className="space-y-6">
               <div className="space-y-4">
-                <p className="text-lg text-foreground/90 leading-relaxed">
-                  I am an aspiring AI/ML Engineer and Software Developer with hands-on experience in building intelligent systems, full-stack web applications, and data-driven dashboards.
+                <p className="text-lg text-foreground/90 leading-relaxed mb-4">
+                  I am a results-driven AI/ML Engineer and Full-Stack Developer with a focus on building intelligent, scalable systems and data-driven solutions. My expertise lies in designing end-to-end architectures that combine advanced machine learning with modern web technologies.
+                </p>
+
+                <p className="text-lg text-foreground/90 leading-relaxed mb-4">
+                  I specialize in developing AI-powered applications, interactive analytics dashboards, and robust backend services using Python and React. I am passionate about transforming complex data into actionable insights through intuitive user interfaces.
                 </p>
 
                 <p className="text-lg text-foreground/90 leading-relaxed">
-                  My work focuses on Machine Learning, Natural Language Processing, and scalable web development using Python, React, and modern frameworks.
-                </p>
-
-                <p className="text-lg text-foreground/90 leading-relaxed">
-                  I have developed AI-based systems including a Code-Mixed Language Identification model and an Agentic AI Honeypot for cybersecurity.
-                </p>
-
-                <p className="text-lg text-foreground/90 leading-relaxed">
-                  I am passionate about solving real-world problems using AI, designing intuitive user interfaces, and building efficient full-stack applications.
+                  My experience includes architecting agentic AI systems for cybersecurity and building high-performance full-stack platforms. I thrive on solving challenging technical problems and delivering high-quality, production-ready software.
                 </p>
               </div>
 
