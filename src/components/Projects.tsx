@@ -10,8 +10,8 @@ const projectsData = [
     title: "Agentic AI Honeypot System",
     description: "An advanced cybersecurity deception platform utilizing autonomous AI agents. It dynamically generates realistic digital decoys, analyzes attacker behavior, and adapts defense strategies in real-time.",
     tech: ["Python", "AI Agents", "Docker", "Machine Learning"],
-    github: "",
-    demo: "",
+    github: "https://github.com/Aafrin-Aaysha/agentic-honeypot",
+    demo: "https://agentic-honeypot-7h39.onrender.com/api/v1/message",
     gradient: "from-primary to-accent",
     icon: Shield
   },
@@ -41,15 +41,6 @@ const projectsData = [
     demo: "",
     gradient: "from-primary to-secondary",
     icon: Utensils
-  },
-  {
-    title: "SOS - Emergency Android Application",
-    description: "A highly responsive emergency assistance Android application enabling users to instantly transmit precise GPS location-based distress alerts to predefined emergency contacts with a single tap.",
-    tech: ["Java", "Android Studio", "GPS API"],
-    github: "",
-    demo: "",
-    gradient: "from-primary via-accent to-secondary",
-    icon: Smartphone
   }
 ];
 
