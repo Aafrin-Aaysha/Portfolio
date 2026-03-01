@@ -1,73 +1,80 @@
-# Welcome to your Lovable project
+# Aafrin Aaysha's Professional Portfolio 🚀
 
-## Project info
+A modern, high-performance, and visually stunning developer portfolio built with the latest web technologies. This portfolio is designed to showcase expertise in AI/ML, Software Engineering, Full-Stack Development, and UI/UX Design.
 
-**URL**: https://lovable.dev/projects/fb0899b2-0dc5-49f6-ab95-7d9320960477
+![Portfolio Preview](public/og-image.png)
 
-## How can I edit this code?
+## 🛠️ Tech Stack
 
-There are several ways of editing your application.
+- **Frontend**: [React.js](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
+- **Build Tool**: [Vite](https://vitejs.dev/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **UI Components**: [Shadcn UI](https://ui.shadcn.com/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Deployment**: [Netlify](https://www.netlify.com/)
 
-**Use Lovable**
+## ✨ Key Features
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/fb0899b2-0dc5-49f6-ab95-7d9320960477) and start prompting.
+- **Recruiter-Focused Layout**: Optimized section ordering for maximum impact.
+- **Glassmorphism Design**: Sleek, modern UI with depth and transparency.
+- **Smooth Animations**: Interactive scroll-based and hover-state animations.
+- **Resume Alignment**: Content perfectly synchronized with the professional resume.
+- **Fully Responsive**: Optimized for all device sizes (Mobile, Tablet, Desktop).
+- **Project Showcase**: Detailed cards for AI, ML, and Web projects with live demos and code links.
+- **Certification Previews**: Visual badges and previews for professional certifications and courses.
 
-Changes made via Lovable will be committed automatically to this repo.
+## 📁 Project Structure
 
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```text
+Portfolio/
+├── public/              # Static assets (Resume, Images, Icons)
+│   └── certificates/    # Certificate images
+├── src/
+│   ├── assets/          # Project-specific assets
+│   ├── components/      # Reusable UI components (Hero, About, Projects, etc.)
+│   ├── pages/           # Main page layouts
+│   ├── hooks/           # Custom React hooks
+│   └── lib/             # Utility functions and configurations
+├── index.html           # Entry point
+└── tailwind.config.ts   # Styling configuration
 ```
 
-**Edit a file directly in GitHub**
+## 🚀 Getting Started
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Follow these steps to set up the project locally:
 
-**Use GitHub Codespaces**
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/Aafrin-Aaysha/Portfolio.git
+   ```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+2. **Navigate to the directory**:
+   ```bash
+   cd Portfolio
+   ```
 
-## What technologies are used for this project?
+3. **Install dependencies**:
+   ```bash
+   npm install
+   ```
 
-This project is built with:
+4. **Start the development server**:
+   ```bash
+   npm run dev
+   ```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 🌐 Deployment
 
-## How can I deploy this project?
+The project is configured for continuous deployment via **Netlify**. Every push to the `main` branch automatically triggers a new build and deployment.
 
-Simply open [Lovable](https://lovable.dev/projects/fb0899b2-0dc5-49f6-ab95-7d9320960477) and click on Share -> Publish.
+## 📬 Contact & Links
 
-## Can I connect a custom domain to my Lovable project?
+- **GitHub**: [@Aafrin-Aaysha](https://github.com/Aafrin-Aaysha)
+- **LinkedIn**: [Aafrin Aaysha](https://www.linkedin.com/in/aafrinaaysha/)
+- **Email**: [aafrinaaysha@gmail.com](mailto:aafrinaaysha@gmail.com)
+- **Portfolio**: [Live Demo](https://flux-nexus-folio.netlify.app/)
 
-Yes, you can!
+---
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Designed & Developed by **Aafrin Aaysha** • 2026
