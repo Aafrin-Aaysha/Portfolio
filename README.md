@@ -73,7 +73,7 @@ The project is configured for continuous deployment via **Netlify**. Every push 
 - **GitHub**: [@Aafrin-Aaysha](https://github.com/Aafrin-Aaysha)
 - **LinkedIn**: [Aafrin Aaysha](https://www.linkedin.com/in/aafrinaaysha/)
 - **Email**: [aafrinaaysha@gmail.com](mailto:aafrinaaysha@gmail.com)
-- **Portfolio**: [Live Demo](https://flux-nexus-folio.netlify.app/)
+- **Portfolio**: [Live Demo](https://aafrinaaysha-portfolio.netlify.app/)
 
 ---
 

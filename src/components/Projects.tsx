@@ -52,11 +52,11 @@ const projectsData = [
     icon: Globe
   },
   {
-    title: "Personal Portfolio UI/UX Design",
-    description: "Designed and developed a modern, responsive personal portfolio using Figma for wireframing and layout planning, and implemented it using React, Vite, and Tailwind CSS with focus on usability, accessibility, and visual hierarchy.",
+    title: "Portfolio",
+    description: "Designed and developed a modern, font-bold responsive personal portfolio using Figma for wireframing and layout planning, and implemented it using React, Vite, and Tailwind CSS with focus on usability, accessibility, and visual hierarchy.",
     tech: ["Figma", "React", "Tailwind CSS", "Vite"],
     github: "https://github.com/Aafrin-Aaysha/Portfolio",
-    demo: "",
+    demo: "https://aafrinaaysha-portfolio.netlify.app/",
     gradient: "from-accent to-primary",
     icon: Layout
   }
