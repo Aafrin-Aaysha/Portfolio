@@ -92,20 +92,10 @@ const Courses = () => {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 className="flex"
               >
-                <Card className="glass-card flex flex-col h-full hover:scale-105 transition-all duration-300 group cursor-pointer border-2 border-transparent hover:border-primary hover:glow-primary overflow-hidden">
-                  <div className="relative w-full h-48 overflow-hidden bg-muted/50 border-b border-border">
-                    <img
-                      src={course.image}
-                      alt={course.title}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                    />
-                    <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                      <Award className="w-12 h-12 text-primary" />
-                    </div>
-                  </div>
-
-                  <CardHeader className="flex-none">
+                <Card className="glass-card flex flex-col h-full hover:scale-105 transition-all duration-300 group cursor-pointer border-2 border-transparent hover:border-primary hover:glow-primary">
+                  <CardHeader>
                     <div className="flex justify-between items-start mb-2">
+                      <Award className="w-8 h-8 text-primary group-hover:text-secondary transition-colors" />
                       <Badge variant="secondary" className="bg-secondary/20 text-secondary border border-secondary/50">
                         {course.badge}
                       </Badge>
