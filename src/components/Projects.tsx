@@ -11,7 +11,7 @@ const projectsData = [
     description: "An advanced cybersecurity deception platform utilizing autonomous AI agents. It dynamically generates realistic digital decoys, analyzes attacker behavior, and adapts defense strategies in real-time.",
     tech: ["Python", "AI Agents", "Docker", "Machine Learning"],
     github: "https://github.com/Aafrin-Aaysha/agentic-honeypot",
-    demo: "https://agentic-honeypot-7h39.onrender.com/api/v1/message",
+    demo: "",
     gradient: "from-primary to-accent",
     icon: Shield
   },
